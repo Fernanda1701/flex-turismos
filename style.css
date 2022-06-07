@@ -1,0 +1,263 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: #122A57;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header .list-items{
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+header ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+h2{
+    color: white;
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: #122A57;
+    margin: 0;
+    height: 70px;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 992px;
+    min-width: 320px;
+    margin: auto;
+    width: 100%;
+}
+
+.list-items li a{
+    color: white;
+}
+
+.list-items li a:hover{
+    color: #FF8D29;
+}
+
+.apresentacao{
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.text-apresentacao{
+    min-height: 200px;
+}
+
+.text-apresentacao h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.text-apresentacao a{
+    background-color: #122A57;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0;
+}
+
+.text-apresentacao a:hover, .item-servico a:hover{
+    background-color: #FF8D29;
+}
+
+.text-apresentacao h2{
+    font-size: 32px;
+    color: #122A57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.text-apresentacao h2::before{
+    content: '';
+    height: 40px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+.text-apresentacao p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 90%;
+}
+
+.apresentacao img{
+    min-width: 320px;
+    max-width: 640px;
+}
+
+.container-externo{
+    background-color: #122A57;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.flex-container2{
+    display: flex;
+    max-width: 992px;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item-servico{
+    text-align: center;
+    color: white;
+}
+
+.item-servico p{
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.item-servico a{
+    background-color: white;
+    color: #122A57;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin: 10px 0;
+}
+
+.planos{
+    padding: 50px 0;
+}
+
+.planos{
+    flex-direction: column;
+}
+
+.planos h1{
+    color: #122A57;
+    font-size: 40px;
+    margin: auto;
+    margin-left: 60px;
+}
+
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+
+.item-plano{
+    margin: 30px;
+    flex: 1;
+    border: #122A57 5px solid;
+    padding: 10px;
+    max-width: 220px;
+}
+
+.item-plano ul{
+    list-style-type: square;
+    padding-bottom: 10px;
+}
+
+.item-plano a{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.item-plano h3{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.item-plano h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.rodape{
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+}
+
+/*Mobile*/
+@media(max-width:992px){
+    header{
+        height: 150px;
+        justify-content: flex-start;
+    }
+
+    header h1{
+        margin-left: 40px;
+    }
+
+    footer{
+        height: 140px;
+    }
+
+    .flex-container, .list-servicos, .list-planos{
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .text-apresentacao{
+        width: 100%;
+    }
+
+    .item-servico{
+        width: 50%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .list-planos{
+        align-items: center;
+    }
+}
