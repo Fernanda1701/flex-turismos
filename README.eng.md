@@ -1,6 +1,6 @@
  <p align="center">
     <a href="https://github.com/Fernanda1701/flex-turismos">☆ Português Brasileiro</a>
-    <a href="">☆ English ☆</a> 
+    <a href="https://github.com/Fernanda1701/flex-turismos/blob/main/README.eng.md">☆ English ☆</a> 
 </p>
 
 
